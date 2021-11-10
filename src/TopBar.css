@@ -19,15 +19,52 @@
 .social .social-icons i{
     padding: 10px;
 }
+.logobar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    
+}
+.logobar img{
+    width: 100px;
+    height: 100px;
+
+}
+.logobar .menu{
+    display: none;
+}
+.logobar .uss i{
+    padding: 15px;
+    justify-content: end;
+}
+.logobar .uss {
+    display: flex;
+    justify-content: end;
+}
+.logobar .logo{
+    display: flex;
+    justify-content: center;
+    padding-left: 30%;
+}
+
 
 @media screen and (max-width:768px){
     .social .contact span{
-        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     .social .social-icons{
         justify-content: center;
+    }
+    .logobar .menu{
+        display: block;
+    }
+    .logobar .hdn{
+        display: none;
+    }
+    .logobar .logo{
+        padding-left: 0;
     }
 }
