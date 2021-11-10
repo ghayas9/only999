@@ -1,6 +1,7 @@
+import TopBar from './TopBar';
 function App(){
   return(
-    <div>GHAYAS</div>
+    <TopBar/>
   )
 }
 export default App;

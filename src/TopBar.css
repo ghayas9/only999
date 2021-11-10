@@ -1,0 +1,33 @@
+.social{
+    background-color: rgb(53, 22, 22);
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+.social .contact span{
+    padding-right: 15px;
+}
+.social .contact span i{
+    padding-right: 10px;
+}
+.social .social-icons{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.social .social-icons i{
+    padding: 10px;
+}
+
+@media screen and (max-width:768px){
+    .social .contact span{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .social .social-icons{
+        justify-content: center;
+    }
+}
