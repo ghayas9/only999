@@ -1,5 +1,106 @@
 import './TopBar.css';
 function TopBar(){
+    var pages=[
+        {
+            name:'Aomeghgh',link:'/',
+            more:[
+                    {name:'Aome',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                ]
+        },
+        {
+            name:'Home',link:'/',
+            more:[
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                ]
+        },
+        {
+            name:'Home',link:'/',
+            more:[
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                ]
+        },
+        {
+            name:'Home',link:'/',
+            more:[
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                ]
+        },
+        {
+            name:'Home',link:'/',
+            more:[
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                ]
+        },
+        {
+            name:'Home',link:'/',
+            more:[
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                ]
+        },
+        {
+            name:'Home',link:'/',
+            more:[
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                ]
+        },
+        {
+            name:'Home',link:'/',
+            more:[
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                ]
+        },
+        {
+            name:'Home',link:'/',
+            more:[
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                    {name:'Home',link:'/'},
+                ]
+        },
+    ]
     return(
         <div className="container-fluid topbar">
             <div className="row social">
@@ -28,9 +129,9 @@ function TopBar(){
             <i className="fas fa-sliders-h hdn"></i>
             </span>
             </div>
-            <div className="nav">
+            <div className="nav container">
                 <ul>
-                    <li>Apparel</li>
+                    {pages.map((e)=><li><span>{e.name} </span><i className="fas fa-caret-down"></i> <ul>{e.more.map((e1)=><li>{e1.name}</li>)} </ul> </li>)}
                 </ul>
             </div>
         </div>

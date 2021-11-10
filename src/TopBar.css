@@ -1,5 +1,5 @@
 .social{
-    background-color: rgb(53, 22, 22);
+    background-color: rgb(56, 12, 19);
     color: white;
     display: flex;
     align-items: center;
@@ -49,6 +49,54 @@
 }
 
 
+@media screen and (min-width:768px){
+    .nav ul{
+        display: flex;
+        font-size: 18px;
+        text-transform: capitalize;
+        font-family: 'Marcellus SC',sans-serif;
+    }
+    
+    .nav ul li{
+        list-style: none;
+        padding: 10px;
+        position: relative;
+        text-transform: uppercase;
+    }
+    .nav ul li::first-letter{
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .nav ul li:hover ul{
+        top: 100%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        box-shadow: 2px 2px 2px 2px rgb(139, 134, 134);
+        width: 200px;
+        left: -30px;
+    }
+    .nav ul li ul{
+        display: none;
+        
+    }
+    .nav ul li:hover span::before{
+        content: '';
+        position: absolute;
+        top: 80%;
+        width: 90%;
+        height: 3px;
+        background-color: tomato;
+        animation: mymove 0.9s;
+        
+    }
+    
+    
+    @keyframes mymove {
+        0%   {width: 0px;}
+        100% {width: 90%;}
+      }
+}
 @media screen and (max-width:768px){
     .social .contact span{
         display: flex;
@@ -66,5 +114,31 @@
     }
     .logobar .logo{
         padding-left: 0;
+    }
+    .nav ul{
+        display: flex;
+        position: absolute;
+        top: 0;
+        flex-direction: column;
+        z-index: 10;
+        background-color: white;
+        left: 0;
+    }
+    .nav ul li ul{
+        display: none;
+        
+    }
+    .nav ul li{
+        list-style: none;
+        padding: 10px;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 30px;
+        align-items: center;
+        width: 250px;
+    }
+    .nav ul li i{
+        transform: rotate(-90deg);
     }
 }
