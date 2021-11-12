@@ -1,3 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container-f{
+    display: flex;
+    align-items: center;
+}
 .social{
     background-color: rgb(56, 12, 19);
     color: white;
@@ -27,9 +36,8 @@
     
 }
 .logobar img{
-    width: 100px;
-    height: 100px;
-
+    width: 150px;
+    height: 150px;
 }
 .logobar .menu{
     display: none;
@@ -50,22 +58,29 @@
 
 
 @media screen and (min-width:768px){
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .nav ul{
         display: flex;
-        font-size: 18px;
+        font-size: 13px;
         text-transform: capitalize;
         font-family: 'Marcellus SC',sans-serif;
+        align-items: center;
+        justify-content: center;
     }
     
     .nav ul li{
         list-style: none;
-        padding: 10px;
+        padding: 2px 5px;
         position: relative;
         text-transform: uppercase;
     }
     .nav ul li::first-letter{
-        font-size: 22px;
-        font-weight: 700;
+        font-size: 14px;
+        font-weight: 200;
     }
     .nav ul li:hover ul{
         top: 100%;
@@ -75,6 +90,10 @@
         box-shadow: 2px 2px 2px 2px rgb(139, 134, 134);
         width: 200px;
         left: -30px;
+        align-items: flex-start;
+    }
+    .nav ul li:hover span{
+        color: rgb(248, 115, 70);
     }
     .nav ul li ul{
         display: none;
@@ -88,8 +107,20 @@
         height: 3px;
         background-color: tomato;
         animation: mymove 0.9s;
-        
     }
+    .nav ul li:hover span::before{
+        content: '';
+        position: absolute;
+        top: 80%;
+        width: 90%;
+        height: 3px;
+        background-color: tomato;
+        animation: mymove 0.9s;
+    }
+    .nav ul li ul li:hover{
+        color: rgb(248, 115, 70);
+    }
+   
     
     
     @keyframes mymove {
@@ -97,7 +128,7 @@
         100% {width: 90%;}
       }
 }
-@media screen and (max-width:768px){
+/* @media screen and (max-width:768px){
     .social .contact span{
         display: flex;
         align-items: center;
@@ -141,4 +172,17 @@
     .nav ul li i{
         transform: rotate(-90deg);
     }
-}
+    .nav ul hr{
+        width: 100%;
+        margin: 0;
+    }
+    .nav ul .cls{
+        justify-content: start;
+    }
+    .nav ul .cls i{
+        display: flex;
+        padding-right: 10px;
+        font-size: 14px;
+        align-items: center;
+    }
+} */

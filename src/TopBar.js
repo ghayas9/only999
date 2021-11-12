@@ -2,102 +2,111 @@ import './TopBar.css';
 function TopBar(){
     var pages=[
         {
-            name:'Aomeghgh',link:'/',
+            name:'Apparel',link:'/',
             more:[
-                    {name:'Aome',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
+                    {name:'Tops',link:'/'},
+                    {name:'T-Shirts',link:'/'},
+                    {name:'Sweatshirts',link:'/'},
+                    {name:'Hoodies',link:'/'},
+                    {name:'Hight Neck',link:'/'},
+                    {name:'Jeans',link:'/'},
+                    {name:'Pajamas',link:'/'},
+                    {name:'Nightsuits',link:'/'},
+                    {name:'Tracksuits',link:'/'},
                 ]
         },
         {
-            name:'Home',link:'/',
+            name:'Home & Lifestyle',link:'/',
             more:[
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
+                    {name:'Candles',link:'/'},
+                    {name:'Home Essentials',link:'/'},
+                    {name:'Frames',link:'/'},
+                    {name:'Home Décor',link:'/'},
+                    {name:'Stationary',link:'/'},
+                    {name:'Cushions & Pillows',link:'/'},
+                    {name:'Clocks',link:'/'},
+                    {name:'Toys',link:'/'},
                 ]
         },
         {
-            name:'Home',link:'/',
+            name:'Jewelry',link:'/',
             more:[
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
+                    {name:'Necklaces',link:'/'},
+                    {name:'Rings',link:'/'},
+                    {name:'Choker',link:'/'},
+                    {name:'Earing',link:'/'},
+                    {name:'Bracelets',link:'/'},
+                    {name:'Anklet',link:'/'},
                 ]
         },
         {
-            name:'Home',link:'/',
+            name:'Party Supplies',link:'/',
             more:[
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
+                    {name:'Birthday',link:'/'},
+                    {name:'Anniversary',link:'/'},
+                    {name:'Graduation',link:'/'},
+                    {name:'Baby Shower',link:'/'},
+                    {name:'Bridal Shower',link:'/'},
+                    {name:'Balloons',link:'/'},
+                    {name:'Party Props',link:'/'},
+                    {name:'Engagement',link:'/'},
+                ]
+
+        },
+        {
+            name:'Gadgets',link:'/',
+            more:[
+                    {name:'Mobile Accessories',link:'/'},
+                    {name:'Wearables',link:'/'},
+                    {name:'Speakers',link:'/'},
+                    {name:'Photography Equipment',link:'/'},
                 ]
         },
         {
-            name:'Home',link:'/',
+            name:'Health & Beauty',link:'/',
             more:[
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
+                    {name:'Beauty Tools',link:'/'},
+                    {name:'Eye Makeup',link:'/'},
+                    {name:'Lip Makeup',link:'/'},
+                    {name:'Face Makeup',link:'/'},
+                    {name:'Nail Art',link:'/'},
+                    {name:'Makeup Brushes',link:'/'},
+                    {name:'Cosmetic Organizer',link:'/'},
                 ]
         },
         {
-            name:'Home',link:'/',
+            name:'Accessories',link:'/',
             more:[
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
+                    {name:'Hair Accessories',link:'/'},
+                    {name:'Eyewear',link:'/'},
+                    {name:'Watches',link:'/'},
                 ]
         },
         {
-            name:'Home',link:'/',
+            name:'Footwear',link:'/',
             more:[
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
+                    {name:'Slippers',link:'/'},
+                    {name:'Flip Flops',link:'/'},
                 ]
         },
         {
-            name:'Home',link:'/',
+            name:'Bags',link:'/',
             more:[
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
+                    {name:'Bag Pack',link:'/'},
+                    {name:'Cosmetics Pouch',link:'/'},
+                    {name:'Clutch',link:'/'},
+                    {name:'Wallet',link:'/'},
+                    {name:'Crossbody',link:'/'},
                 ]
         },
         {
-            name:'Home',link:'/',
+            name:'Bags',link:'/',
             more:[
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
-                    {name:'Home',link:'/'},
+                    {name:'Bag Pack',link:'/'},
+                    {name:'Cosmetics Pouch',link:'/'},
+                    {name:'Clutch',link:'/'},
+                    {name:'Wallet',link:'/'},
+                    {name:'Crossbody',link:'/'},
                 ]
         },
     ]
@@ -129,7 +138,7 @@ function TopBar(){
             <i className="fas fa-sliders-h hdn"></i>
             </span>
             </div>
-            <div className="nav container">
+            <div className="nav container-f">
                 <ul>
                     {pages.map((e)=><li><span>{e.name} </span><i className="fas fa-caret-down"></i> <ul>{e.more.map((e1)=><li>{e1.name}</li>)} </ul> </li>)}
                 </ul>
