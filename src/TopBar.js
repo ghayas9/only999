@@ -100,7 +100,7 @@ function TopBar(){
                 ]
         },
         {
-            name:'Bags',link:'/',
+            name:'999 or below',link:'/',
             more:[
                     {name:'Bag Pack',link:'/'},
                     {name:'Cosmetics Pouch',link:'/'},
