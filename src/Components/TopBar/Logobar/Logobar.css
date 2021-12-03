@@ -1,0 +1,39 @@
+.logobar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+}
+.logobar img{
+    width: 150px;
+    height: 150px;
+}
+.logobar .menu{
+    display: none;
+}
+.logobar .uss i{
+    padding: 15px;
+    justify-content: end;
+}
+.logobar .uss {
+    display: flex;
+    justify-content: end;
+}
+.logobar .logo{
+    display: flex;
+    justify-content: center;
+    padding-left: 30%;
+}
+/*  */
+
+@media screen and (max-width:768px){
+.logobar .menu{
+    display: block;
+}
+.logobar .hdn{
+    display: none;
+}
+.logobar .logo{
+    padding-left: 0;
+}
+}

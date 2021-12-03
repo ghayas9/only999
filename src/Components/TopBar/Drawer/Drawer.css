@@ -1,0 +1,36 @@
+.drawer{
+    position: absolute;
+    left: 0;
+    width:270px;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: white;
+}
+.drawer ul{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.drawer ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 10px 30px 10px 10px;
+    
+}
+.drawer .pages li i{
+    transform: rotate(-90deg);
+}
+.drawer ul li .dr-btn *{
+    padding-right:10px;
+}
+
+@media screen and (min-width:768px){
+    .drawer{
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+}
