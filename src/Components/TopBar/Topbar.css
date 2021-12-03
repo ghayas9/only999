@@ -1,0 +1,31 @@
+@media screen and (max-width:992px){
+
+    .social .contact span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .social .social-icons{
+        justify-content: center;
+    }
+    .social{
+        font-size: 16px;
+    }
+    
+    
+}
+
+@media screen and (max-width:992px){
+    .navbars ul{
+        display: none;
+    }
+    
+}
+@media screen and (min-width:992px){
+    .drawer{
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+}
