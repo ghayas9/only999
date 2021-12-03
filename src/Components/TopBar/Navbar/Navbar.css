@@ -2,6 +2,8 @@
     display: flex;
     justify-content: center;
     padding: 0;
+    cursor: pointer;
+    white-space: nowrap;
 }
 .navbars ul{
     display: flex;
@@ -17,6 +19,7 @@
     list-style: none;
     position: relative;
     text-transform: uppercase;
+    padding: 1px;
 }
 .navbars ul li span{
     padding: 2px 5px;
@@ -26,20 +29,32 @@
    font-size: 14px;
    font-weight: bolder;
 }
+
 .navbars ul li:hover ul{
     top: 100%;
     display: flex;
     flex-direction: column;
     position: absolute;
-    box-shadow: 2px 2px 2px 2px rgb(139, 134, 134);
-    padding: 20px 30px ;
+    box-shadow: 2px 6px 22px 2px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 2px 6px 22px 2px rgba(0,0,0,0.47);
+    -moz-box-shadow: 2px 6px 22px 2px rgba(0,0,0,0.47);
+    padding: 20px 30px;
+    animation: op 1.5s;
+    font-size: 14px;
 }
 .navbars ul li:hover span{
     color: rgb(248, 115, 70);
+    transition: all 1s;
 }
-.navbars ul li ul{
-    display: none;
-    
+
+.navbars ul li:hover span::before{
+    content: '';
+    position: absolute;
+    top: 80%;
+    width: 90%;
+    height: 3px;
+    background-color: tomato;
+    transition: all 0.5s;
 }
 .navbars ul li:hover span::before{
     content: '';
@@ -48,24 +63,60 @@
     width: 90%;
     height: 3px;
     background-color: tomato;
-    animation: mymove 0.9s;
-}
-.navbars ul li:hover span::before{
-    content: '';
-    position: absolute;
-    top: 80%;
-    width: 90%;
-    height: 3px;
-    background-color: tomato;
-    animation: mymove 0.9s;
+    animation: wd 0.9s;
 }
 .navbars ul li ul li:hover{
     color: rgb(248, 115, 70);
     
 }
 .navbars ul li ul li{
+    white-space: nowrap;
     padding: 2px 0px;
     align-items: start;
     
+}
+
+.navbars ul li ul{
+    display: none;
+    
+}
+.animation{
+    animation-name: crandop ;
+    animation-play-state: running;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wd {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes op {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes crandop {
+    0%{
+        color: black;
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        color: coral;
+        opacity: 1;
+    }
 }
 

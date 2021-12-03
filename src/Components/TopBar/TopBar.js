@@ -108,14 +108,8 @@ const Topbar = () => {
                 ]
         },
         {
-            name:'999 or below',link:'/',
-            more:[
-                    {name:'Bag Pack',link:'/'},
-                    {name:'Cosmetics Pouch',link:'/'},
-                    {name:'Clutch',link:'/'},
-                    {name:'Wallet',link:'/'},
-                    {name:'Crossbody',link:'/'},
-                ]
+            name:'Rs 999 or below',link:'/'
+        
         },
     ];
 

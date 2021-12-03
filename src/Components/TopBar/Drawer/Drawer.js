@@ -18,9 +18,9 @@ const Drawer = (props) => {
            <ul>
             {
                 props.pages.map(
-                    (e)=>
+                    (e,index)=>
                     <>
-                    <Page name={e.name} more={e.more}/>
+                    {index+1!=props.pages.length?<Page name={e.name} more={e.more}/>:<li className='animation'>{e.name}</li>}
                     </>
                      )
             }
