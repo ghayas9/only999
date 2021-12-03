@@ -33,18 +33,3 @@
     padding: 10px;
 }
 
-@media screen and (max-width:768px){
-    .social .contact span{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .social .social-icons{
-        justify-content: center;
-    }
-    .social{
-        font-size: 16px;
-    }
-    
-    
-}
