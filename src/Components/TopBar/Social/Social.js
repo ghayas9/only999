@@ -4,7 +4,8 @@ import './Social.css';
 
 const Social = () => {
     return (
-        <div className="row social">
+        <div className="container-fluid">
+            <div className="row social">
                 <div className="col-lg-9 contact">
                 <span >
                     <i className="fas fa-phone-alt"></i>
@@ -19,6 +20,7 @@ const Social = () => {
                     <Icons/>
                 </div>
             </div>
+        </div>
     );
 }
 

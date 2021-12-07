@@ -52,7 +52,7 @@ const Footbar = () => {
             <div className="footheader container-fluid">
                 <div className="row">
                     <div className="col-lg-3">
-                    BE IN TOUCH WITH US:
+                        BE IN TOUCH WITH US:
                     </div>
                     <div className="col-lg-6">
                         <input type="text" placeholder='Enter Email' className='col-9 col-md-10'/>
@@ -96,16 +96,14 @@ const Footbar = () => {
                         <Morepages 
                         name='CONTACT US'
                         comp={
-                            <>
-                                <b>ADDRESS</b>: university road peshawar
-                                <br />
-
-                                <b>PHONE</b>: +92 343 6402064
-                                <br />
-
-                                <b>HOURS</b>: All week from 9:00 AM to 11:00 PM
-                                <br />
-                                <b>E-MAIL</b>: ghayasudin999@gmail.com
+                                <>
+                                    <b>ADDRESS</b>: university road peshawar
+                                    <br />
+                                    <b>PHONE</b>: +92 343 6402064
+                                    <br />
+                                    <b>HOURS</b>: All week from 9:00 AM to 11:00 PM
+                                    <br />
+                                    <b>E-MAIL</b>: ghayasudin999@gmail.com
                                 </>
                                 }
                         />

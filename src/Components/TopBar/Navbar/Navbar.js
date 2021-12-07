@@ -2,7 +2,7 @@ import React from 'react';
 import './Navbar.css';
 const Navbar = (props) => {
     return (
-        <div className="navbars container-fluid">
+        <div className="navbars">
             <ul>
                 {
                     props.pages.map(

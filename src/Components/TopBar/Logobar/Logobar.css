@@ -3,10 +3,12 @@
     justify-content: space-between;
     align-items: center;
     font-size: 24px;
+   
 }
+
 .logobar img{
-    width: 150px;
-    height: 150px;
+    width: 110px;
+    height: 110px;
 }
 .logobar .menu{
     display: none;

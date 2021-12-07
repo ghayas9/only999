@@ -115,14 +115,14 @@ const Topbar = () => {
 
 
     return (
-        <div className="container-fluid topbar">
+        <>
             <Drawer pages={pages} show={show} setshow={setshow}/>
             <Social/>
+            <div className="container-fluid sticky">
             <Logobar setshow={setshow} show={show}/>
             <Navbar pages={pages}/>
-
-            
-        </div>
+            </div>
+        </>
     );
 }
 
