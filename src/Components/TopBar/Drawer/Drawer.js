@@ -7,12 +7,12 @@ const Drawer = (props) => {
     return (
         <div className={props.show?'drawer':'nomorepages'}>
             {/* Back Button */}
-            <ul>
+            <ul style={{margin:'3px'}}>
                 <li onClick={()=>{props.setshow(false)}}>
                 <span className='dr-btn'> <i className="fas fa-times"></i> close</span>
                 </li>
             </ul>
-            <hr />
+            <hr style={{marginTop:'0'}}/>
 
             {/* Pages */}
            <ul>
@@ -30,7 +30,7 @@ const Drawer = (props) => {
             {/*  */}
             <ul>
                 <li>
-                <span className='dr-btn'>  <i className="fas fa-lock"></i> Signin</span>
+                <span className='dr-btn'>  <i className="fas fa-lock"></i> Sign In</span>
                 </li>
                 <li>
                 <span className='dr-btn'>  <i className="fas fa-user"></i> Register</span>

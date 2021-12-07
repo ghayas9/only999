@@ -1,0 +1,63 @@
+.footheader {
+    background-color: rgb(56, 12, 19);
+    color: white;
+    justify-content: center;
+    align-content: center;
+}
+.footbar {
+    background-color: rgb(247, 232, 232);
+}
+.footbar .row{
+    padding: 10px;
+    justify-content: center;
+}
+.footheader .row div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    
+}
+.footheader .row div input{
+    border-radius: 20px 0 0 20px;
+    padding-left: 10px;
+}
+.footheader .row div input::placeholder{
+    padding-left: 10px;
+}
+.footheader .row div button{
+    border-radius: 0 20px 20px 0;
+    background-color: rgb(34, 33, 33);
+}
+.footheader .row div input,.footheader .row div button{
+    height: 40px;
+    outline: none;
+}
+.footbar .footpages div ul li{
+    list-style: none;
+    font-size: large;
+}
+.footbar .footpages div{
+    padding: 0 20px;
+}
+.footbar .footpages div .h{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:992px){
+    .footbar .footpages div .h{
+        background-color: rgb(219, 154, 245);
+        padding: 20px;
+    }
+    .footbar .footpages div .no{
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width:992px){
+    .footbar .footpages div .h i{
+        display: none;
+    }
+}

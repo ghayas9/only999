@@ -32,4 +32,14 @@
 .social .social-icons i{
     padding: 10px;
 }
+/* FootBar */
+.social-footbar .social-icons{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 18px;
+}
+.social-footbar .social-icons i{
+    padding: 10px;
+}
 

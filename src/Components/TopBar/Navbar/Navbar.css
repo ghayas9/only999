@@ -85,9 +85,6 @@
     animation-play-state: running;
     animation-duration: 3000ms;
     animation-iteration-count: infinite;
-    animation-play-state: running;
-    animation-duration: 3000ms;
-    animation-iteration-count: infinite;
 }
 
 @keyframes wd {
@@ -113,6 +110,7 @@
     }
     50%{
         opacity: 0.5;
+        color: blue;
     }
     100%{
         color: coral;
