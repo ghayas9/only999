@@ -1,0 +1,10 @@
+.grid{
+    font-size: larger ;
+}
+.grid .fr{
+    text-align: right;
+}
+.grid  i{
+    padding: 5px;
+}
+
