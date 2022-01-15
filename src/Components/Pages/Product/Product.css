@@ -10,3 +10,45 @@
 .pro-icn i{
     padding: 10px;
 }
+.two-product{
+    padding: 30px;
+}
+.two-product .card{
+    padding: 30px;
+}
+.three-product{
+    padding: 15px;
+}
+.three-product .card{
+    padding: 15px;
+}
+.four-product{
+    padding: 10px;
+}
+.four-product .card{
+    padding: 10px;
+}
+
+@media screen and (max-width:680px){
+        .two-product{
+            padding: 5px;
+        }
+        .two-product .card{
+            padding: 5px;
+        }
+        .three-product{
+            padding: 1px;
+        }
+        .three-product .card{
+            padding: 3px;
+        }
+        .four-product{
+            padding: 0px;
+        }
+        .four-product .card{
+            padding: 5px;
+        }
+
+        
+    
+}

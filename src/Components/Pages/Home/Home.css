@@ -19,6 +19,9 @@
     .carousel-caption-card{
         padding: 5px 10px;
     }
+    .sm-none{
+        display: none;
+    }
     
 }
 

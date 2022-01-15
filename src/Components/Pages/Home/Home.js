@@ -1,6 +1,7 @@
 import React from 'react';
 import CarouselSlide from './Components/Carousel'
-import Products from './Components/Products';
+import Fourproducts from './Components/FourProducts';
+import Products from './Components/Product';
 
 import './Home.css'
 
@@ -9,7 +10,8 @@ const Home = () => {
     return (
         <div className='home'>
             <CarouselSlide/>
-            <Products/>
+            {/* <Products/> */}
+            <Fourproducts/>
         </div>
     );
 }
