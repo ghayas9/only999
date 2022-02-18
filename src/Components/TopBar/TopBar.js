@@ -10,105 +10,105 @@ const Topbar = () => {
     const [show, setshow] = useState();
     var pages=[
         {
-            name:'Apparel',link:'/',
+            name:'Apparel',link:'/Apparel',
             more:[
-                    {name:'Tops',link:'/'},
-                    {name:'T-Shirts',link:'/'},
-                    {name:'Sweatshirts',link:'/'},
-                    {name:'Hoodies',link:'/'},
-                    {name:'Hight Neck',link:'/'},
-                    {name:'Jeans',link:'/'},
-                    {name:'Pajamas',link:'/'},
-                    {name:'Nightsuits',link:'/'},
-                    {name:'Tracksuits',link:'/'},
+                    {name:'Tops',link:'/Apparel'},
+                    {name:'T-Shirts',link:'/Apparel'},
+                    {name:'Sweatshirts',link:'/Apparel'},
+                    {name:'Hoodies',link:'/Apparel'},
+                    {name:'Hight Neck',link:'/Apparel'},
+                    {name:'Jeans',link:'/Apparel'},
+                    {name:'Pajamas',link:'/Apparel'},
+                    {name:'Nightsuits',link:'/Apparel'},
+                    {name:'Tracksuits',link:'/Apparel'},
                 ]
         },
         {
-            name:'Home & Lifestyle',link:'/',
+            name:'Home & Lifestyle',link:'/Apparel',
             more:[
-                    {name:'Candles',link:'/'},
-                    {name:'Home Essentials',link:'/'},
-                    {name:'Frames',link:'/'},
-                    {name:'Home Décor',link:'/'},
-                    {name:'Stationary',link:'/'},
-                    {name:'Cushions & Pillows',link:'/'},
-                    {name:'Clocks',link:'/'},
-                    {name:'Toys',link:'/'},
+                    {name:'Candles',link:'/Apparel'},
+                    {name:'Home Essentials',link:'/Apparel'},
+                    {name:'Frames',link:'/Apparel'},
+                    {name:'Home Décor',link:'/Apparel'},
+                    {name:'Stationary',link:'/Apparel'},
+                    {name:'Cushions & Pillows',link:'/Apparel'},
+                    {name:'Clocks',link:'/Apparel'},
+                    {name:'Toys',link:'/Apparel'},
                 ]
         },
         {
-            name:'Jewelry',link:'/',
+            name:'Jewelry',link:'/Apparel',
             more:[
-                    {name:'Necklaces',link:'/'},
-                    {name:'Rings',link:'/'},
-                    {name:'Choker',link:'/'},
-                    {name:'Earing',link:'/'},
-                    {name:'Bracelets',link:'/'},
-                    {name:'Anklet',link:'/'},
+                    {name:'Necklaces',link:'/Apparel'},
+                    {name:'Rings',link:'/Apparel'},
+                    {name:'Choker',link:'/Apparel'},
+                    {name:'Earing',link:'/Apparel'},
+                    {name:'Bracelets',link:'/Apparel'},
+                    {name:'Anklet',link:'/Apparel'},
                 ]
         },
         {
-            name:'Party Supplies',link:'/',
+            name:'Party Supplies',link:'/Apparel',
             more:[
-                    {name:'Birthday',link:'/'},
-                    {name:'Anniversary',link:'/'},
-                    {name:'Graduation',link:'/'},
-                    {name:'Baby Shower',link:'/'},
-                    {name:'Bridal Shower',link:'/'},
-                    {name:'Balloons',link:'/'},
-                    {name:'Party Props',link:'/'},
-                    {name:'Engagement',link:'/'},
+                    {name:'Birthday',link:'/Apparel'},
+                    {name:'Anniversary',link:'/Apparel'},
+                    {name:'Graduation',link:'/Apparel'},
+                    {name:'Baby Shower',link:'/Apparel'},
+                    {name:'Bridal Shower',link:'/Apparel'},
+                    {name:'Balloons',link:'/Apparel'},
+                    {name:'Party Props',link:'/Apparel'},
+                    {name:'Engagement',link:'/Apparel'},
                 ]
 
         },
         {
-            name:'Gadgets',link:'/',
+            name:'Gadgets',link:'/Apparel',
             more:[
-                    {name:'Mobile Accessories',link:'/'},
-                    {name:'Wearables',link:'/'},
-                    {name:'Speakers',link:'/'},
-                    {name:'Photography Equipment',link:'/'},
+                    {name:'Mobile Accessories',link:'/Apparel'},
+                    {name:'Wearables',link:'/Apparel'},
+                    {name:'Speakers',link:'/Apparel'},
+                    {name:'Photography Equipment',link:'/Apparel'},
                 ]
         },
         {
-            name:'Health & Beauty',link:'/',
+            name:'Health & Beauty',link:'/Apparel',
             more:[
-                    {name:'Beauty Tools',link:'/'},
-                    {name:'Eye Makeup',link:'/'},
-                    {name:'Lip Makeup',link:'/'},
-                    {name:'Face Makeup',link:'/'},
-                    {name:'Nail Art',link:'/'},
-                    {name:'Makeup Brushes',link:'/'},
-                    {name:'Cosmetic Organizer',link:'/'},
+                    {name:'Beauty Tools',link:'/Apparel'},
+                    {name:'Eye Makeup',link:'/Apparel'},
+                    {name:'Lip Makeup',link:'/Apparel'},
+                    {name:'Face Makeup',link:'/Apparel'},
+                    {name:'Nail Art',link:'/Apparel'},
+                    {name:'Makeup Brushes',link:'/Apparel'},
+                    {name:'Cosmetic Organizer',link:'/Apparel'},
                 ]
         },
         {
-            name:'Accessories',link:'/',
+            name:'Accessories',link:'/Apparel',
             more:[
-                    {name:'Hair Accessories',link:'/'},
-                    {name:'Eyewear',link:'/'},
-                    {name:'Watches',link:'/'},
+                    {name:'Hair Accessories',link:'/Apparel'},
+                    {name:'Eyewear',link:'/Apparel'},
+                    {name:'Watches',link:'/Apparel'},
                 ]
         },
         {
-            name:'Footwear',link:'/',
+            name:'Footwear',link:'/Apparel',
             more:[
-                    {name:'Slippers',link:'/'},
-                    {name:'Flip Flops',link:'/'},
+                    {name:'Slippers',link:'/Apparel'},
+                    {name:'Flip Flops',link:'/Apparel'},
                 ]
         },
         {
-            name:'Bags',link:'/',
+            name:'Bags',link:'/Apparel',
             more:[
-                    {name:'Bag Pack',link:'/'},
-                    {name:'Cosmetics Pouch',link:'/'},
-                    {name:'Clutch',link:'/'},
-                    {name:'Wallet',link:'/'},
-                    {name:'Crossbody',link:'/'},
+                    {name:'Bag Pack',link:'/Apparel'},
+                    {name:'Cosmetics Pouch',link:'/Apparel'},
+                    {name:'Clutch',link:'/Apparel'},
+                    {name:'Wallet',link:'/Apparel'},
+                    {name:'Crossbody',link:'/Apparel'},
                 ]
         },
         {
-            name:'Rs 999 or below',link:'/'
+            name:'Rs 999 or below',link:'/Apparel'
         
         },
     ];

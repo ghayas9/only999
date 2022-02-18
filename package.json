@@ -2,6 +2,7 @@
   "name": "only999",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ghayas9.github.io/only999",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
@@ -13,6 +14,7 @@
     "react-bootstrap": "^2.0.3",
     "react-dom": "^17.0.2",
     "react-rating-stars-component": "^2.2.0",
+    "react-router-dom": "^6.2.1",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
@@ -20,7 +22,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject","predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
