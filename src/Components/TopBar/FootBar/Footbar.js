@@ -56,7 +56,7 @@ const Footbar = () => {
                     </div>
                     <div className="col-lg-6">
                         <input type="text" placeholder='Enter Email' className='col-9 col-md-10'/>
-                        <button className='col-3 col-md-2'>JOIN US</button>
+                        <button className='col-3 col-md-2' style={{color:'whitesmoke'}}>JOIN US</button>
                     </div>
                     <div className="col-3 social-footbar">
                         <Icons/>
