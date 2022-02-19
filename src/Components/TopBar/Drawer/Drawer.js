@@ -9,12 +9,12 @@ const Drawer = (props) => {
             {/* Back Button */}
             <ul style={{margin:'3px'}}>
                 <li onClick={()=>{props.setshow(false)}}>
-                <span className='dr-btn'> <i className="fas fa-times"></i> close</span>
+                    <span className='dr-btn'> <i className="fas fa-times"></i> close</span>
                 </li>
             </ul>
             <hr style={{marginTop:'0'}}/>
 
-            {/* Pages */}
+            {/* Menu */}
            <ul>
             {
                 props.pages.map(
@@ -30,19 +30,19 @@ const Drawer = (props) => {
             {/*  */}
             <ul>
                 <li>
-                <span className='dr-btn'>  <i className="fas fa-lock"></i> Sign In</span>
+                    <span className='dr-btn'>  <i className="fas fa-lock"></i> Sign In</span>
                 </li>
                 <li>
-                <span className='dr-btn'>  <i className="fas fa-user"></i> Register</span>
+                <   span className='dr-btn'>  <i className="fas fa-user"></i> Register</span>
                 </li>
                 <li>
-                <span className='dr-btn'>  <i className="fas fa-check"></i> Checkout</span>
+                    <span className='dr-btn'>  <i className="fas fa-check"></i> Checkout</span>
                 </li>
                 <li>
-                <span className='dr-btn'>  <i className="far fa-heart"></i> Wishlist</span>
+                    <span className='dr-btn'>  <i className="far fa-heart"></i> Wishlist</span>
                 </li>
                 <li>
-                <span className='dr-btn'>  <i className="fas fa-balance-scale"></i> Compare</span>
+                    <span className='dr-btn'>  <i className="fas fa-balance-scale"></i> Compare</span>
                 </li>
             </ul>
 
@@ -50,13 +50,13 @@ const Drawer = (props) => {
             {/*  */}
             <ul>
                 <li>
-                <span className='dr-btn'>  <i className="fas fa-dollar-sign"></i> US Dollars</span>
+                    <span className='dr-btn'>  <i className="fas fa-dollar-sign"></i> US Dollars</span>
                 </li>
                 <li>
-                <span className='dr-btn'>  <i className="fas fa-euro-sign"></i> Euro</span>
+                    <span className='dr-btn'>  <i className="fas fa-euro-sign"></i> Euro</span>
                 </li>
                 <li>
-                <span className='dr-btn'>  <i className="fas fa-pound-sign"></i> British Pounds</span>
+                    <span className='dr-btn'>  <i className="fas fa-pound-sign"></i> British Pounds</span>
                 </li>
             </ul>
         </div>
