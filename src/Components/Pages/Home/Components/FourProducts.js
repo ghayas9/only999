@@ -2,12 +2,12 @@ import React from 'react';
 import Products from './Product';
 import ProductTitle from './ProductTitle';
 
-const Fourproducts = () => {
+const Fourproducts = (p) => {
     return (
        <div className="container-fluid" style={{
            margin:'10px 0px'
        }}>
-           <ProductTitle title='BEST SELLER' subtitle='TOP PRODUCTS OF THIS WEEK'/>
+           <ProductTitle title={p.title} subtitle={p.subtitle}/>
            <div className="row">
                 <Products/>
                 <Products/>

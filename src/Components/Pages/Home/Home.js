@@ -11,8 +11,8 @@ const Home = () => {
         <div className='home'>
             <CarouselSlide/>
             {/* <Products/> */}
-            <Fourproducts/>
-            <Fourproducts/>
+            <Fourproducts title={'BEST SELLER'} subtitle={'TOP PRODUCTS OF THIS WEEK'}/>
+            <Fourproducts title={'TRENDING'} subtitle={'TOP WISHES OF THIS WEEK'}/>
         </div>
     );
 }
