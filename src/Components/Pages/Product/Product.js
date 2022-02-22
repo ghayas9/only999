@@ -9,11 +9,15 @@ const Product = () => {
 
     const [Grid, setGrid] = useState([false,false,true,false]);
     const [products, setproducts] = useState([]);
+    const getData=async()=>{
+    //    const data=await fetch('https://fakestoreapi.com/products')
+     let res =await fetch("https://fakestoreapi.com/products")
+    let data = await res.json();
+    setproducts(data)
+    }
     useEffect(() => {
-        for(var i=0;i<100;i++){
-            setproducts(products => [...products,i])
-        }
-    }, []);
+        getData()
+    }, [products]);
 
 
     
@@ -29,12 +33,12 @@ const Product = () => {
         <div className="container-fluid">
             <div className="row">
                 {
-                    products.map(()=>{
+                    products.map((data)=>{
                         return(
-                            Grid[0]?<OneProduct/>:
-                            Grid[1]?<TwoProduct/>:
-                            Grid[2]?<ThreeProduct/>:
-                            Grid[3]?<FourProduct/>:null
+                            Grid[0]?<OneProduct data={data}/>:
+                            Grid[1]?<TwoProduct data={data}/>:
+                            Grid[2]?<ThreeProduct data={data}/>:
+                            Grid[3]?<FourProduct data={data}/>:null
                         )
                     })
                 }

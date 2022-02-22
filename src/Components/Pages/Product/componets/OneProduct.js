@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactStars from "react-rating-stars-component";
 
-const Oneproduct = () => {
-    const img='https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500';
+const Oneproduct = (props) => {
+    // const img='https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500';
+    const id=props.data.id;
+    const title=props.data.title;
+    const price=props.data.price;
+    const img=props.data.image;
+    const des=props.data.description;
     return(
         <div className='col-12'>
             <div className="card" style={{
@@ -14,7 +19,7 @@ const Oneproduct = () => {
 
             <div className="col-md-3  col-sm-12">
             <img src={img} alt="" style={{
-                width:'100%'
+                width:'100%',
             }}/>
             </div>
             <div className="col-md-6">
@@ -31,8 +36,8 @@ const Oneproduct = () => {
                 fullIcon={<i className="fa fa-star"></i>}
                 activeColor="#ffd700"
             />
-            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit</h6>
-            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet necessitatibus, officiis maxime obcaecati similique temporibus culpa aperiam vitae consectetur impedit, tempore et asperiores ipsum rerum aut fugiat sequi animi. Unde?</p>
+            <h6>{title}</h6>
+            <p >{des}</p>
             </div>
             <div className="col-md-3" style={{
                 alignItems:'center',
@@ -41,10 +46,10 @@ const Oneproduct = () => {
             }}>
             <h1 style={{
                 color:'red'
-            }}>Rs:{3453.00}</h1>
+            }}>Rs:{price}</h1>
             <h3 style={{
                 textDecorationLine:'line-through'
-            }}>Rs:{345674}</h3>
+            }}>Rs:{price+100}</h3>
             <button className='btn' style={{
                 backgroundColor:'#621940',
                 color:'white',
