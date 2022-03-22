@@ -4,15 +4,35 @@ const Addpost = () => {
     const [img, setimg] = useState([]);
     const imgShow=(link,index)=>{
         return(
+            <p style={{
+                position:'relative'
+            }}>
             <img key={index} src={link} alt="" style={{
                     width:'100px',
                     height:'100px',
                     objectFit:'cover',
                     border:'solid black 1px',
-                    margin:'2px'
-                }} onClick={(key)=>{
+                    margin:'2px',
+                    position:'relative'
+                }}  />
+                <span style={{
+                    backgroundColor:'red',
+                    padding:'4px 8px',
+                    borderRadius:'50%',
+                    position:'absolute',
+                    top:'1px',
+                    right:'1px',
+                    fontSize:'16px',
+                    cursor:'pointer'
+                }}
+
+                onClick={(key)=>{
                     removefile(index)
-                }} />
+                }}
+                
+                >x</span>
+            </p>
+            
         )
     }
 
