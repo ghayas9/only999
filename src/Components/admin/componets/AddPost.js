@@ -81,7 +81,7 @@ const Addpost = () => {
         
         axios({
           method:"post",
-          url:'http://localhost:3001/AddProduct',
+          url:'http://only999backend.herokuapp.com/AddProduct',
           data:fd,
           headers:{
             'Content-Type':'multipart/form-data'
