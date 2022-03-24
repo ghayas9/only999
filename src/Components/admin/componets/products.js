@@ -2,7 +2,7 @@ import React ,{useEffect,useState}from 'react';
 import axios from 'axios';
 
 
-const Products = () => {
+const Products = (p) => {
     const [data, setdata] = useState([]);
 
     useEffect(() => {
@@ -10,7 +10,7 @@ const Products = () => {
     },[]);
 
     function getdata(){
-        fetch('http://localhost:3001/AllProducts').then((result)=>{
+        fetch('http://only999backend.herokuapp.com/AllProducts').then((result)=>{
         result.json().then((res)=>{
         setdata(res);
         console.log(data);
@@ -22,17 +22,19 @@ const Products = () => {
         <div className="container">
             {data.map((e,i)=>{
                 return(
-                    <h5>
-                        {e['_id']} 
-                        {e['price']} 
-                         
-                    
-                    
+                    <h5 key={i}>
+                        {e['_id']} {'=>'}
+                        {e['price']['price']} 
+                        <img src={e['img'][0]} style={{
+                            width:'60px',
+                            height:'60px'
+                        }} alt="" />
+                       
                     <button onClick={
                         (x)=>{
                             axios({
                                 method:"delete",
-                                url:`http://localhost:3001/DeleteProduct/${e['_id']}`,
+                                url:`http://only999backend.herokuapp.com/DeleteProduct/${e['_id']}`,
                                 
                               }).then((result)=>{
                                 console.log(result)

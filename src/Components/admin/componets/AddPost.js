@@ -75,9 +75,10 @@ const Addpost = () => {
         fd.append('seller_id','234567845');
         fd.append('title',title);
         fd.append('desc',desc);
-        fd.append('price',price);
-        fd.append('cat',cat);
+        fd.append('price',JSON.stringify(price));
+        fd.append('cat',JSON.stringify(cat));
         fd.append('kwords',keywords);
+        
         axios({
           method:"post",
           url:'http://localhost:3001/AddProduct',
@@ -86,6 +87,7 @@ const Addpost = () => {
             'Content-Type':'multipart/form-data'
           }
         }).then((res)=>{console.log(res)}).catch((err)=>{console.log(err)})
+        // console.log(fd.values())
     //   console.log(fd)
 
     // try{
