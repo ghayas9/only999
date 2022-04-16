@@ -3,6 +3,7 @@ import Product from "./Components/Pages/Product/Product";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Admin from "./Components/admin/admin";
 import Pages from "./Components/Pages/Pages";
+import Singalproducts from "./Components/Pages/SingalProduct/SingalProducts";
 function App(){
   return(
     <BrowserRouter>
@@ -11,6 +12,7 @@ function App(){
         <Route index element={<Pages page={<Home />}/>} />
         <Route path="Products" element={<Pages page={<Product />}/>} />
         <Route path="admin" element={<Admin/>} />
+        <Route path="singalproduct/:id" element={<Singalproducts/>} />
         <Route path="*" element={<h1>PAGE NOT FOUND</h1>} />
     </Routes>
     

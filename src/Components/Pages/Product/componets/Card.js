@@ -1,14 +1,19 @@
-import React from 'react';
+import React ,{useEffect} from 'react';
+import { Link } from 'react-router-dom';
 import ReactStars from "react-rating-stars-component";
-
-
-
-
 const Card = (props) => {
-
+    useEffect(() => {
+        console.log(props.data)
+        console.log(props.data.img)
+        
+    }, []);
     return (
-        <div className="card">
-            <img src={props.data.image} alt={props.data.image} className='col-12' style={{
+        <Link to={`/singalproduct/${props.data._id}`} replace style={{
+            textDecoration:'none',
+            color:'black'
+        }}>
+        <div className="card"  >
+            <img src={props.data.img[0]} alt={props.data.img} className='col-12' style={{
                 height:'auto',
                 maxHeight:'250px',
                 width:'auto',
@@ -23,7 +28,7 @@ const Card = (props) => {
                 size={24}
                 isHalf={true}
                 edit={false}
-                value={props.data.rating.rate}
+                value={5}
                 emptyIcon={<i className="far fa-star"></i>}
                 halfIcon={<i className="fa fa-star-half-alt"></i>}
                 fullIcon={<i className="fa fa-star"></i>}
@@ -32,9 +37,9 @@ const Card = (props) => {
             <h5>
                 <span style={{
                     color:'red'
-                }}>RS. {props.data.price}</span> {' '} <span style={{
+                }}>RS. {props.data.price.price}</span> {' '} <span style={{
                     textDecorationLine:'line-through'
-                }}>RS.{props.data.price+100}</span>
+                }}>RS.{props.data.price.price+100}</span>
             </h5>
             <button className='btn' style={{
                 backgroundColor:'#621940',
@@ -45,6 +50,7 @@ const Card = (props) => {
             </button>
             </div>
         </div>
+        </Link>
     );
 }
 

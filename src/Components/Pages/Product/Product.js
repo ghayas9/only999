@@ -11,7 +11,7 @@ const Product = () => {
     const [products, setproducts] = useState([]);
     const getData=async()=>{
     //    const data=await fetch('https://fakestoreapi.com/products')
-     let res =await fetch("https://fakestoreapi.com/products")
+     let res =await fetch('http://only999backend.herokuapp.com/AllProducts')
     let data = await res.json();
     setproducts(data)
     }
