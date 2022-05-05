@@ -8,6 +8,7 @@ const Singalproducts = () => {
 
     const [product, setproduct] = useState(null);
     const [img, setimg] = useState([]);
+    const [title, settitle] = useState('');
     const getData=async()=>{
     //    const data=await fetch('https://fakestoreapi.com/products')
      let res =await axios({
@@ -18,10 +19,11 @@ const Singalproducts = () => {
     try{
         setproduct(res.data)
     }catch{
-        setproduct(null)
+        setproduct([])
     }
     
     setimg(res.data.img)
+    settitle(res.data.title)
     }
     useEffect(() => {
         getData()
@@ -30,10 +32,18 @@ const Singalproducts = () => {
     }, []);
     return (
 
+        // <div>
+        //     {product!=null?<Silder slide={img}/>:<h1>Searchin</h1>}
+        // </div>
         <div>
-            {product!=null?<Silder slide={img}/>:<h1>Not Found</h1>}
-            
+        <img src={img} alt="" style={{
+            width:'400px'
+        }}/>
+        <h1>price ...</h1>
+        <h1>{title}</h1>
+
         </div>
+        
     );
 }
 
