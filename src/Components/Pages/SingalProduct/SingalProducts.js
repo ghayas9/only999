@@ -22,7 +22,7 @@ const Singalproducts = () => {
         setproduct([])
     }
     
-    setimg(res.data.img)
+    setimg(res.data.img[0])
     settitle(res.data.title)
     }
     useEffect(() => {

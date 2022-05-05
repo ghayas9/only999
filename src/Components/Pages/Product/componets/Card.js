@@ -13,9 +13,7 @@ const Card = (props) => {
             color:'black'
         }}>
         <div className="card"  >
-            <img src={props.data.img[0]} alt={props.data.img} className='col-12' style={{
-                height:'auto',
-                maxHeight:'250px',
+            <img src={props.data.img[0]} alt={props.data.img} className='col-12 ht' style={{
                 width:'auto',
                 maxWidth:'100%',
                 objectFit:'cover'
@@ -34,13 +32,14 @@ const Card = (props) => {
                 fullIcon={<i className="fa fa-star"></i>}
                 activeColor="#ffd700"
             />
-            <h5>
+            <h7>
                 <span style={{
                     color:'red'
                 }}>RS. {props.data.price.price}</span> {' '} <span style={{
                     textDecorationLine:'line-through'
                 }}>RS.{props.data.price.price+100}</span>
-            </h5>
+                <br />
+            </h7>
             <button className='btn' style={{
                 backgroundColor:'#621940',
                 color:'white',

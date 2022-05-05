@@ -3,11 +3,7 @@ import ReactStars from "react-rating-stars-component";
 
 const Oneproduct = (props) => {
     // const img='https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500';
-    const id=props.data.id;
-    const title=props.data.title;
-    const price=props.data.price;
-    const img=props.data.image;
-    const des=props.data.description;
+    const data = props.data
     return(
         <div className='col-12'>
             <div className="card" style={{
@@ -18,8 +14,10 @@ const Oneproduct = (props) => {
             }}>
 
             <div className="col-md-3  col-sm-12">
-            <img src={img} alt="" style={{
+            <img src={data.img[0]} alt="" style={{
                 width:'100%',
+                
+                
             }}/>
             </div>
             <div className="col-md-6">
@@ -36,8 +34,8 @@ const Oneproduct = (props) => {
                 fullIcon={<i className="fa fa-star"></i>}
                 activeColor="#ffd700"
             />
-            <h6>{title}</h6>
-            <p >{des}</p>
+            <h6>{props.data.title}</h6>
+            <p >{props.data.desc}</p>
             </div>
             <div className="col-md-3" style={{
                 alignItems:'center',
@@ -46,10 +44,10 @@ const Oneproduct = (props) => {
             }}>
             <h1 style={{
                 color:'red'
-            }}>Rs:{price}</h1>
+            }}>Rs:{data.price.price}</h1>
             <h3 style={{
                 textDecorationLine:'line-through'
-            }}>Rs:{price+100}</h3>
+            }}>Rs:{data.price.price+100}</h3>
             <button className='btn' style={{
                 backgroundColor:'#621940',
                 color:'white',
