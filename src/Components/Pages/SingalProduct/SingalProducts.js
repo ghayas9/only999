@@ -2,10 +2,11 @@ import React ,{useEffect,useState}from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import Silder from './components/silder';
+import { useSelector } from 'react-redux';
 
 const Singalproducts = () => {
     let { id } = useParams();
-
+    const state = useSelector(state=>state.Products)
     const [product, setproduct] = useState(null);
     const [img, setimg] = useState([]);
     const [title, settitle] = useState('');
@@ -15,7 +16,6 @@ const Singalproducts = () => {
         method:"post",
         url:`http://only999backend.herokuapp.com/OneProduct/${id}`,
       })
-      console.log(res)
     try{
         setproduct(res.data)
     }catch{
@@ -27,8 +27,6 @@ const Singalproducts = () => {
     }
     useEffect(() => {
         getData()
-
-        console.log(product)
     }, []);
     return (
 

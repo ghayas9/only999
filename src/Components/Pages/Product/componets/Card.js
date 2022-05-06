@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import ReactStars from "react-rating-stars-component";
 const Card = (props) => {
     useEffect(() => {
-        console.log(props.data)
-        console.log(props.data.img)
+        // console.log(props.data)
+        // console.log(props.data.img)
         
     }, []);
     return (
@@ -32,14 +32,14 @@ const Card = (props) => {
                 fullIcon={<i className="fa fa-star"></i>}
                 activeColor="#ffd700"
             />
-            <h7>
+            <h6>
                 <span style={{
                     color:'red'
                 }}>RS. {props.data.price.price}</span> {' '} <span style={{
                     textDecorationLine:'line-through'
                 }}>RS.{props.data.price.price+100}</span>
                 <br />
-            </h7>
+            </h6>
             <button className='btn' style={{
                 backgroundColor:'#621940',
                 color:'white',

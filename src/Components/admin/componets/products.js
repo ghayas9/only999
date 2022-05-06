@@ -1,23 +1,17 @@
 import React ,{useEffect,useState}from 'react';
 import axios from 'axios';
-
+import { useDispatch, useSelector } from 'react-redux';
+import * as actionCreator from '../../../State/Actions/Actions'
 
 const Products = (p) => {
     const [data, setdata] = useState([]);
+    const state =useSelector(state=>state.Products)
+    const dispatch = useDispatch()
 
-    useEffect(() => {
-        getdata()
-    },[]);
+    useEffect(async() => {
+        setdata(await state);
+    },[state,data]);
 
-    function getdata(){
-        fetch('http://only999backend.herokuapp.com/AllProducts').then((result)=>{
-        result.json().then((res)=>{
-        setdata(res);
-        console.log(data);
-  })
-  }).catch((err)=>{console.log(err)})
-            
-    }
     return (
         <div className="container">
             {data.map((e,i)=>{
@@ -38,7 +32,7 @@ const Products = (p) => {
                                 
                               }).then((result)=>{
                                 console.log(result)
-                                getdata()
+                                dispatch(actionCreator.Reload())
                           })
                           .catch((err)=>{console.log(err)})
                         }

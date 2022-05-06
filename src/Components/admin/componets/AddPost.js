@@ -1,8 +1,11 @@
 import React ,{useState} from 'react';
 import { pages } from './req';
 import axios from 'axios';
+import { useDispatch, useSelector } from 'react-redux';
+import * as action from "../../../State/Actions/Actions"
 const Addpost = () => {
 
+    const dispatch =useDispatch()
     const [img, setimg] = useState([]);
     const [catselection, setcatselection] = useState(0);
 
@@ -57,7 +60,7 @@ const Addpost = () => {
         let list = new DataTransfer();
         let files =document.getElementById('f').files;
         for(let i =0; i<files.length;i++){
-            if(i!=index){
+            if(i!==index){
                 list.items.add(files[i])
             }
         }
@@ -86,7 +89,13 @@ const Addpost = () => {
           headers:{
             'Content-Type':'multipart/form-data'
           }
-        }).then((res)=>{console.log(res)}).catch((err)=>{console.log(err)})
+        }).then((res)=>{
+            
+            console.log(res)
+            dispatch(action.Reload())
+        }
+        
+        ).catch((err)=>{console.log(err)})
         // console.log(fd.values())
     //   console.log(fd)
 
@@ -186,7 +195,7 @@ const Addpost = () => {
                         }}>
                         {pages.map((e,index)=>{
                             return(
-                                <option defaultChecked={index==1?true:false} key={index} value={e.name}>{e.name}</option>
+                                <option defaultChecked={index===1?true:false} key={index} value={e.name}>{e.name}</option>
                             )
                         })}
                         </select> 

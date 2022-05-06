@@ -1,5 +1,14 @@
-import { ADD_TO_CARD, REMOVE_FROM_CARD } from "../Constants/Constants"
+import { ADD_TO_CARD, RELOAD_PRODUCTS, REMOVE_FROM_CARD } from "../Constants/Constants"
 
+export const Reload =()=>{
+    return (e)=>{
+       
+        e({
+            type:RELOAD_PRODUCTS,
+            payload:[]
+        })
+    }
+}
 export const AddToCard =(product)=>{
     return (e)=>{
         e({

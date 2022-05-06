@@ -3,10 +3,11 @@ import Footbar from '../TopBar/FootBar/Footbar';
 import Topbar from '../TopBar/TopBar';
 
 const Pages = (p) => {
+    const page = p.page;
     return (
         <>
         <Topbar/>
-        {p.page}
+        {page}
         <Footbar/>
         </>
     );
